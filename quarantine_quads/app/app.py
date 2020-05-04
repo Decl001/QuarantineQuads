@@ -1,12 +1,15 @@
 from flask import Flask
-
+from flask import jsonify
+from flask import render_template
+from flask import request
 
 APP = Flask(__name__)
 
 
 @APP.route('/')
 def index():
-    pass
+    return render_template('index.html')
+
 
 
 @APP.route('/games')
